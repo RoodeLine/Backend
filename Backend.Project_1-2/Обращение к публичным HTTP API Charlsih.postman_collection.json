@@ -1,0 +1,495 @@
+{
+	"info": {
+		"_postman_id": "4d8ec2a7-f872-4713-b39e-fba4e2f0e201",
+		"name": "Обращение к публичным HTTP API Charlsih",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41562516"
+	},
+	"item": [
+		{
+			"name": "Part 1",
+			"item": [
+				{
+					"name": "All Linux news",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=linux&apiKey=c543963602934e2c8e4a25291d5383bc",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "linux"
+								},
+								{
+									"key": "apiKey",
+									"value": "c543963602934e2c8e4a25291d5383bc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News from \"Разработка\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=Разработка&language=ru&from=2025-01-12&to=2025-01-27&apiKey=c543963602934e2c8e4a25291d5383bc",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Разработка"
+								},
+								{
+									"key": "language",
+									"value": "ru"
+								},
+								{
+									"key": "from",
+									"value": "2025-01-12"
+								},
+								{
+									"key": "to",
+									"value": "2025-01-27"
+								},
+								{
+									"key": "apiKey",
+									"value": "c543963602934e2c8e4a25291d5383bc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Linux news from Rassian",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?pageSize=10&page=3&q=linux&language=ru&apiKey=c543963602934e2c8e4a25291d5383bc",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "3"
+								},
+								{
+									"key": "q",
+									"value": "linux"
+								},
+								{
+									"key": "language",
+									"value": "ru"
+								},
+								{
+									"key": "apiKey",
+									"value": "c543963602934e2c8e4a25291d5383bc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All science from Rassian",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?category=science&country=ru&apiKey=c543963602934e2c8e4a25291d5383bc",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "science"
+								},
+								{
+									"key": "country",
+									"value": "ru"
+								},
+								{
+									"key": "apiKey",
+									"value": "c543963602934e2c8e4a25291d5383bc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Part 2",
+			"item": [
+				{
+					"name": "Инструменты разработчика",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://hh.ru/vacancy/104369642/contacts?employerId=4104037&withQuestion=false",
+							"protocol": "https",
+							"host": [
+								"hh",
+								"ru"
+							],
+							"path": [
+								"vacancy",
+								"104369642",
+								"contacts"
+							],
+							"query": [
+								{
+									"key": "employerId",
+									"value": "4104037"
+								},
+								{
+									"key": "withQuestion",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Part 3",
+			"item": [
+				{
+					"name": "метод getMe",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.telegram.org/bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg/getMe",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg",
+								"getMe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUpdates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.telegram.org/bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg/getUpdates",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg",
+								"getUpdates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendMessage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://api.telegram.org/bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg/sendMessage?chat_id=1068755021&text=Hello",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg",
+								"sendMessage"
+							],
+							"query": [
+								{
+									"key": "chat_id",
+									"value": "1068755021"
+								},
+								{
+									"key": "text",
+									"value": "Hello"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendPhoto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "zrEiCcTuS/photomode_25102024_212207.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.telegram.org/bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg/sendPhoto?chat_id=1068755021",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg",
+								"sendPhoto"
+							],
+							"query": [
+								{
+									"key": "chat_id",
+									"value": "1068755021"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendPDF",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "nB_eC7cJj/Доклад.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.telegram.org/bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg/sendPhoto?chat_id=1068755021",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg",
+								"sendPhoto"
+							],
+							"query": [
+								{
+									"key": "chat_id",
+									"value": "1068755021"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendDock",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dock",
+									"type": "file",
+									"src": "cYuUPsjsy/Доклад.docx"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.telegram.org/bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg/sendPhoto?chat_id=1068755021",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg",
+								"sendPhoto"
+							],
+							"query": [
+								{
+									"key": "chat_id",
+									"value": "1068755021"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserProfilePhotos",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var template = `\r",
+									"<style type=\"text/css\">\r",
+									"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+									"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+									"    .tftable tr {background-color:#ffffff;}\r",
+									"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+									"    .tftable tr:hover {background-color:#e0ffff;}\r",
+									"</style>\r",
+									"\r",
+									"<table class=\"tftable\" border=\"1\">\r",
+									"    <tr>\r",
+									"        <th>File ID</th>\r",
+									"        <th>File Unique ID</th>\r",
+									"        <th>File Size</th>\r",
+									"        <th>Width</th>\r",
+									"        <th>Height</th>\r",
+									"    </tr>\r",
+									"    \r",
+									"    {{#each response.result.photos}}\r",
+									"        <tr>\r",
+									"            <td>{{this.0.file_id}}</td>\r",
+									"            <td>{{this.0.file_unique_id}}</td>\r",
+									"            <td>{{this.0.file_size}}</td>\r",
+									"            <td>{{this.0.width}}</td>\r",
+									"            <td>{{this.0.height}}</td>\r",
+									"        </tr>\r",
+									"    {{/each}}\r",
+									"</table>\r",
+									"`;\r",
+									"\r",
+									"function constructVisualizerPayload() {\r",
+									"    return {response: pm.response.json()}\r",
+									"}\r",
+									"\r",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.telegram.org/bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg/getUserProfilePhotos?user_id=1068755021",
+							"protocol": "https",
+							"host": [
+								"api",
+								"telegram",
+								"org"
+							],
+							"path": [
+								"bot7550315415:AAFOEWlvBSzn9eQv3PMChpWFHAdqXO6Dlxg",
+								"getUserProfilePhotos"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1068755021"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
